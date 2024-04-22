@@ -1,16 +1,16 @@
 <?php
 class Calculation 
 {
-	public $distance;
-	public $path;
+	public Distance $distance;
+	public string $path;
 	
-	public function __construct($distance, $path)
+	public function __construct(Distance $distance, string $path)
 	{
 	    $this->distance = $distance;
         $this->path = $path;		
 	}
 	
-	public function run(string $first, string $second)
+	public function run(string $first, string $second) :void
 	{
 		$first_addres =  self::getCoords($first);
 		$second_addres = self::getCoords($second);
@@ -18,7 +18,7 @@ class Calculation
 		echo json_encode($distant);
 	}
 		
-	private static function getCoords($address)
+	private static function getCoords(string $address) : ?array
 	{
 	    if(!$address){
 	    	return false; 
