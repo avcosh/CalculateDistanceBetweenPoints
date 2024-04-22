@@ -7,7 +7,7 @@ class Calculation
 	public function __construct(Distance $distance, string $path)
 	{
 	    $this->distance = $distance;
-        $this->path = $path;		
+            $this->path = $path;		
 	}
 	
 	public function run(string $first, string $second) :void
