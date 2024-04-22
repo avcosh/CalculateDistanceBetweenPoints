@@ -2,13 +2,13 @@
 
 class Distance 
 {
-	public function calculateDist($first, $second) 
+	public function calculateDist(string $first, string $second) :float
 	{
 		$distance = self::calculate($first['lat'], $first['lng'], $second['lat'], $second['lng']);
 		return $distance/1000;
 	}
 	
-	private static function calculate($lat1, $lng1, $lat2, $lng2) 
+	private static function calculate(float $lat1, float $lng1, float $lat2, float $lng2) :float
 	{
 		// переводим координаты в радианы
 		$lat1 = $lat1 * M_PI / 180;
