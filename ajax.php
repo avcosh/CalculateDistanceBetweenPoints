@@ -10,8 +10,10 @@ $second = $rq->get('second', 'unknown');
 $path = 'http://maps.google.com/maps/api/geocode/json?address=';
 
 $distance  = new Distance();
-$calculation = new Calculation($distance, string $path);
+$calculation = new Calculation(Distance $distance, string $path);
 
 $calculation->run(string $first, string $second);
 ?>
+
+
 
