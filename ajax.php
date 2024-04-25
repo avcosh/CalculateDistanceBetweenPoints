@@ -15,7 +15,7 @@ $distance  = new Distance();
 $calculation = new Calculation(Distance $distance, string $path);
 
 $calculation->run(string $first, string $second);
-?>
+
 
 
 
