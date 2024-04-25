@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 class Distance 
 {
-	public function calculateDist(string $first, string $second) :float
+	public function calculateDist(array $first, array $second) :float
 	{
 		$distance = self::calculate($first['lat'], $first['lng'], $second['lat'], $second['lng']);
 		return $distance/1000;
