@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 require 'Calculation.php';
 require 'Distance.php';
 require 'Request.php';
